@@ -73,6 +73,7 @@ mulBtn.addEventListener('click', function() {
 })
 divBtn.addEventListener('click', function(){
   operation = 'divide'
+  ifOperate = true
 })
 equBtn.addEventListener('click', function() {
   total = operate(operation, parseInt(numStr1), parseInt(numStr2))
@@ -93,9 +94,11 @@ clearBtn.addEventListener('click', function() {
 oneBtn.addEventListener('click', function() {
   if (!ifOperate) {
     numStr1 += '1'
+    value.innerHTML = numStr1;
   }
   else {
     numStr2 += '1'
+    value.innerHTML = numStr2;
   }
   //console.log(numStr1)
   //console.log(numStr2)
@@ -104,17 +107,91 @@ oneBtn.addEventListener('click', function() {
 twoBtn.addEventListener('click', function() {
   if (!ifOperate) {
     numStr1 += '2'
+    value.innerHTML = numStr1;
   }
   else {
     numStr2 += '2'
+      value.innerHTML = numStr2;
   }
 })
 
 threeBtn.addEventListener('click', function() {
   if (!ifOperate) {
     numStr1 += '3'
+    value.innerHTML = numStr1;
   }
   else {
     numStr2 += '3'
+      value.innerHTML = numStr2;
+  }
+})
+fourBtn.addEventListener('click', function() {
+  if (!ifOperate) {
+    numStr1 += '4'
+    value.innerHTML = numStr1;
+  }
+  else {
+    numStr2 += '4'
+    value.innerHTML = numStr2;
+  }
+})
+fiveBtn.addEventListener('click', function() {
+  if (!ifOperate) {
+    numStr1 += '5'
+    value.innerHTML = numStr1;
+  }
+  else {
+    numStr2 += '3'
+    value.innerHTML = numStr2;
+  }
+})
+sixBtn.addEventListener('click', function() {
+  if (!ifOperate) {
+    numStr1 += '6'
+    value.innerHTML = numStr1;
+  }
+  else {
+    numStr2 += '6'
+    value.innerHTML = numStr2;
+  }
+})
+sevenBtn.addEventListener('click', function() {
+  if (!ifOperate) {
+    numStr1 += '7'
+    value.innerHTML = numStr1;
+  }
+  else {
+    numStr2 += '7'
+    value.innerHTML = numStr2;
+  }
+})
+eightBtn.addEventListener('click', function() {
+  if (!ifOperate) {
+    numStr1 += '8'
+    value.innerHTML = numStr1;
+  }
+  else {
+    numStr2 += '8'
+    value.innerHTML = numStr2;
+  }
+})
+nineBtn.addEventListener('click', function() {
+  if (!ifOperate) {
+    numStr1 += '9'
+    value.innerHTML = numStr1;
+  }
+  else {
+    numStr2 += '9'
+    value.innerHTML = numStr2;
+  }
+})
+zeroBtn.addEventListener('click', function() {
+  if (!ifOperate) {
+    numStr1 += '0'
+    value.innerHTML = numStr1;
+  }
+  else {
+    numStr2 += '0'
+    value.innerHTML = numStr2;
   }
 })
