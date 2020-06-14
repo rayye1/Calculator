@@ -13,7 +13,6 @@
   }
 
   body {
-    background: linear-gradient(#e66465, #9198e5);
     font-family: Odibee Sans;
   }
 
@@ -40,16 +39,23 @@
 
   button {
     height: 60px;
-    border-radius: 3px;
+    border-radius: 15px;
     background-color: #d9d9d9;
     opacity: 80%;
     font-size: 2rem;
     transition: all .2s ease-in-out;
     font-family: Odibee Sans;
+    box-shadow: 0 9px #999;
+    outline:none;
   }
 
   button:hover {
     background-color: #f2f2f2;
+  }
+
+  button:active {
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
   }
 
   .keys {
