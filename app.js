@@ -29,35 +29,18 @@ let ifOperate = false
 let total;
 let numDec = 0
 
-function add(num1, num2) {
-  return num1+num2;
-}
-
-function subtract(num1, num2) {
-  return num1 - num2;
-}
-
-function multiply(num1, num2) {
-  return num1 * num2;
-}
-
-function divide(num1, num2) {
-  return num1 / num2;
-}
-
-
 function operate(operator, num1, num2) {
   if (operator == 'add') {
-    return add(num1, num2)
+    return num1 + num2;
   }
   else if (operator == 'subtract') {
-    return subtract(num1,num2)
+    return num1 - num2;
   }
   else if (operator == 'multiply') {
-    return multiply(num1, num2)
+    return num1 * num2;
   }
   else if (operator = 'divide') {
-    return divide(num1, num2)
+    return num1 / num2;
   }
 }
 
@@ -82,7 +65,7 @@ function divListen() {
   numDec = 0
 }
 function equalListen() {
-  total = operate(operation, parseFloat(numStr1), parseFloat(numStr1))
+  total = operate(operation, parseFloat(numStr1), parseFloat(numStr2))
   value.innerHTML = total.toFixed(4)
   numStr1 = "" + total
   numStr2 = ""
